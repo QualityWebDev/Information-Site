@@ -1,0 +1,16 @@
+{
+  "name": "info-hub",
+  "version": "1.0.0",
+  "description": "Practice Site",
+  "main": "index.js",
+  "scripts": {
+    "build": "node --watch index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "info-hub"
+  },
+  "author": "Ben Leevey",
+  "license": "ISC"
+}
