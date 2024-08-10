@@ -6,7 +6,7 @@ const PORT = 8080;
 
 http.createServer( (req, res) => {
   const q = url.parse(req.url, true);
-  const filename = "." + q.pathname + '.html';
+  const filename = req.url === "/" ? "./index.html" : `.${q.pathname}.html`';
   const notFound = './404.html';
   fs.readFile(filename, (err, data) => {
     if (err) {
